@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hommer_admin/binding/initialbinding.dart';
 import 'package:hommer_admin/core/services/services.dart';
-import 'package:hommer_admin/test.dart';
 import 'package:hommer_admin/view/screen/auth/checkemail.dart';
 import 'package:hommer_admin/view/screen/auth/login.dart';
 import 'package:hommer_admin/view/screen/auth/otpcode.dart';
@@ -20,7 +19,7 @@ void main() async {
   //bool i =true;
   var locale = const Locale('ar', 'AE');
   Get.updateLocale(locale);
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       //  home: Ldid(),
       getPages: [
-        GetPage(name: "/dashboard", page: () => AdminDashboard()),
+        GetPage(name: "/dashboard", page: () => const AdminDashboard()),
         GetPage(
           name: "/",
           page: () => const LogIn(),
@@ -54,7 +53,7 @@ class MyApp extends StatelessWidget {
             name: "/inprogressorderderails",
             page: () => InProgressOrderDetails()),
 
-        GetPage(name: "/servicedetails", page: () => ServiceDetails()),
+        GetPage(name: "/servicedetails", page: () => const ServiceDetails()),
       ],
     );
   }

@@ -54,10 +54,10 @@ class NotificationPage extends StatelessWidget {
                                   style: operations,
                                 ),
                               ]),
-                              SizedBox(
+                              const SizedBox(
                                 height: 50,
                               ),
-                              Container(
+                              SizedBox(
                                 width: 750,
                                 child: formFeilds(
                                   theController: controller.title,
@@ -67,10 +67,10 @@ class NotificationPage extends StatelessWidget {
                                   theLabel: "العنوان",
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 50,
                               ),
-                              Container(
+                              SizedBox(
                                 width: 750,
                                 child: formFeilds(
                                   theController: controller.massage,
@@ -80,7 +80,7 @@ class NotificationPage extends StatelessWidget {
                                   theLabel: "الرسالة",
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 100,
                               ),
                               sendnotificationButton(

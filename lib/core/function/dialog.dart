@@ -7,7 +7,7 @@ deleteDialog(
         required void Function()? onPressed}) =>
     Get.defaultDialog(
         title: title,
-        titleStyle: TextStyle(
+        titleStyle: const TextStyle(
           fontSize: 24,
           color: Color.fromRGBO(226, 33, 38, 1),
         ),
@@ -17,7 +17,7 @@ deleteDialog(
           ElevatedButton(
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
-                Color.fromRGBO(226, 33, 38, 1),
+                const Color.fromRGBO(226, 33, 38, 1),
               )),
               onPressed: () {
                 Get.back();

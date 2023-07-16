@@ -16,10 +16,10 @@ class ServiceDetails extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
         body: SafeArea(
             child: Center(
-          child: Container(
+          child: SizedBox(
             height: MediaQuery.of(context).size.height * 1,
             child: SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Column(children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 1,
@@ -27,7 +27,7 @@ class ServiceDetails extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.1,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width * 0.66,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -39,7 +39,7 @@ class ServiceDetails extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width * 0.66,
                   child: theorderdetails(
                     button: Column(
@@ -53,7 +53,7 @@ class ServiceDetails extends StatelessWidget {
                                     },
                                     title: "قبول الطلب",
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 10,
                                   ),
                                   approve(

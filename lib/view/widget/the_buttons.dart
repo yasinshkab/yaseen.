@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:hommer_admin/core/constant/text_theme.dart';
-import 'package:hommer_admin/core/function/valid_input.dart';
 import 'package:hommer_admin/data/model/orders_model.dart';
-import 'package:hommer_admin/view/widget/form_field.dart';
-import 'package:hommer_admin/view/widget/message.dart';
 
 Widget primaryButton({
   //required Function function,
@@ -233,7 +229,7 @@ Widget orderNow({
         onPressed: onPressed,
         child: Text(
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
             color: Colors.white,
             fontWeight: FontWeight.normal,
@@ -297,7 +293,7 @@ Widget approve({
         onPressed: onPressed,
         child: Text(
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
             color: Colors.white,
             fontWeight: FontWeight.w500,

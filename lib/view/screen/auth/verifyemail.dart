@@ -55,7 +55,7 @@ class _VerifyEmailState extends State<VerifyEmail> {
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 10,
                                   ),
                                   Text(
@@ -78,7 +78,7 @@ class _VerifyEmailState extends State<VerifyEmail> {
                                     height: 20,
                                   ),
                                   OtpTextField(
-                                      inputFormatters: [],
+                                      inputFormatters: const [],
                                       keyboardType: TextInputType.number,
                                       fieldWidth: 50,
                                       numberOfFields: 4,
@@ -110,7 +110,7 @@ class _VerifyEmailState extends State<VerifyEmail> {
                                                 controller.resend();
                                               },
                                               theText: "إعادة الإرسال"),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 7,
                                           )
                                         ],

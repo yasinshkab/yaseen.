@@ -22,7 +22,7 @@ class SliderPage extends StatelessWidget {
             widget: Container(
                 child: Center(
                     child: SingleChildScrollView(
-                        child: Container(
+                        child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.8,
               child: Column(children: [
                 const SizedBox(
@@ -48,7 +48,7 @@ class SliderPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width * 0.5,
                   child: ListView.builder(
                       shrinkWrap: true,
@@ -103,7 +103,7 @@ class SliderPage extends StatelessWidget {
                                                   '${controller.sliderresponse[index]['slider_id']}',
                                                   style: thesubTitle,
                                                 ),
-                                                Spacer(),
+                                                const Spacer(),
                                                 IconButton(
                                                     splashRadius: 0.1,
                                                     onPressed: () {

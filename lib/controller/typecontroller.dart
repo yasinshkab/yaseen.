@@ -2,9 +2,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hommer_admin/core/function/handel_data.dart';
-import 'package:hommer_admin/core/services/services.dart';
 import 'package:hommer_admin/core/status_request.dart';
-import 'package:hommer_admin/data/model/category_model.dart';
 import 'package:hommer_admin/data/model/type_model.dart';
 import 'package:hommer_admin/data/remote/main/typedata.data.dart';
 

@@ -154,7 +154,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                             onTap: () {
                               Get.delete<MainPageControllerImp>();
 
-                              Future.delayed(Duration(milliseconds: 1))
+                              Future.delayed(const Duration(milliseconds: 1))
                                   .then((value) => _onItemTap(0));
                             },
                             title: "الرئيسية",
@@ -192,7 +192,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           // Get.delete<MainPageControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(2));
                                         },
                                         title: "الطلبات الجديدة",
@@ -203,7 +203,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           // Get.delete<MainPageControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(6));
                                         },
                                         title: "الطلبات قيد التنفيذ",
@@ -214,7 +214,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           // Get.delete<MainPageControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(7));
                                         },
                                         title: "الأرشيف",
@@ -241,7 +241,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           Get.delete<ACservicesControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(8));
                                         },
                                         title: "طلبات التكييف",
@@ -252,7 +252,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           Get.delete<ACArchiveControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(9));
                                         },
                                         title: "أرشيف طلبات التكييف",
@@ -263,7 +263,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           Get.delete<WMservicesControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(10));
                                         },
                                         title: "طلبات الغسالات",
@@ -274,7 +274,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                           Get.delete<WMArchiveControllerImp>();
 
                                           Future.delayed(
-                                                  Duration(milliseconds: 1))
+                                                  const Duration(milliseconds: 1))
                                               .then((value) => _onItemTap(11));
                                         },
                                         title: "أرشيف طلبات الغسالات",
@@ -288,7 +288,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                             onTap: () {
                               Get.delete<ProductsControllerImp>();
 
-                              Future.delayed(Duration(milliseconds: 1))
+                              Future.delayed(const Duration(milliseconds: 1))
                                   .then((value) => _onItemTap(3));
                             },
                             title: "المنتجات",
@@ -298,7 +298,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                             onTap: () {
                               Get.delete<TypeAddControllerImp>();
 
-                              Future.delayed(Duration(milliseconds: 1))
+                              Future.delayed(const Duration(milliseconds: 1))
                                   .then((value) => _onItemTap(4));
                             },
                             title: "الأنواع",
@@ -308,7 +308,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                             onTap: () {
                               //Get.delete<HomepageConrolloerImp>();
 
-                              Future.delayed(Duration(milliseconds: 1))
+                              Future.delayed(const Duration(milliseconds: 1))
                                   .then((value) => _onItemTap(1));
                             },
                             title: "الإشعارات",
@@ -332,7 +332,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                   onTap: () {
                                     //Get.delete<HomepageConrolloerImp>();
 
-                                    Future.delayed(Duration(milliseconds: 1))
+                                    Future.delayed(const Duration(milliseconds: 1))
                                         .then((value) => _onItemTap(5));
                                   },
                                   title: "Slider",

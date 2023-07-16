@@ -279,7 +279,7 @@ class WMServices extends StatelessWidget {
                                                       });
                                                 },
                                                 theText: "التفاصيل"),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 10,
                                             )
                                           ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hommer_admin/controller/services/acarchive.control.dart';
 import 'package:hommer_admin/controller/services/wmarchive.control.dart';
 import 'package:hommer_admin/core/constant/text_theme.dart';
 import 'package:hommer_admin/core/handeldataview.dart';
@@ -121,7 +120,7 @@ class WMServicesArchive extends StatelessWidget {
                                   controller.serviceorders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 50,
                                         child: Center(
                                           child: Text(
@@ -150,7 +149,7 @@ class WMServicesArchive extends StatelessWidget {
                                   controller.serviceorders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 120,
                                         child: Center(
                                           child: Text(
@@ -179,7 +178,7 @@ class WMServicesArchive extends StatelessWidget {
                                   controller.serviceorders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 125,
                                         child: Text(
                                           "${controller.serviceorders[index].serviceTime}",
@@ -208,7 +207,7 @@ class WMServicesArchive extends StatelessWidget {
                                           children: [
                                             "${controller.serviceorders[index].serviceStatus}" ==
                                                     "0"
-                                                ? Container(
+                                                ? SizedBox(
                                                     width: 100,
                                                     child: Center(
                                                       child: Text(
@@ -222,7 +221,7 @@ class WMServicesArchive extends StatelessWidget {
                                                   )
                                                 : "${controller.serviceorders[index].serviceStatus}" ==
                                                         "1"
-                                                    ? Container(
+                                                    ? SizedBox(
                                                         width: 100,
                                                         child: Center(
                                                           child: Text(
@@ -237,7 +236,7 @@ class WMServicesArchive extends StatelessWidget {
                                                       )
                                                     : "${controller.serviceorders[index].serviceStatus}" ==
                                                             "3"
-                                                        ? Container(
+                                                        ? SizedBox(
                                                             width: 100,
                                                             child: Center(
                                                               child: Text(
@@ -282,7 +281,7 @@ class WMServicesArchive extends StatelessWidget {
                                                       });
                                                 },
                                                 theText: "التفاصيل"),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 10,
                                             )
                                           ],

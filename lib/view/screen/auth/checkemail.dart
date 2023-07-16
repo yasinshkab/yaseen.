@@ -66,7 +66,7 @@ class Checkemail extends StatelessWidget {
                                     },
                                     keyboardtype: TextInputType.emailAddress,
                                     thecontroller: controller.theemail,
-                                    preicons: Icon(
+                                    preicons: const Icon(
                                       Icons.email_outlined,
                                       color: Color.fromRGBO(125, 125, 125, 1),
                                       size: 28,

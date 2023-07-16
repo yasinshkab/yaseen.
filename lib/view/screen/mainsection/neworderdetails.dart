@@ -23,10 +23,10 @@ class NewOrderDetails extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
         body: SafeArea(
             child: Center(
-          child: Container(
+          child: SizedBox(
             height: MediaQuery.of(context).size.height * 1,
             child: SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Column(children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 1,
@@ -34,7 +34,7 @@ class NewOrderDetails extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.1,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width * 0.66,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -49,14 +49,14 @@ class NewOrderDetails extends StatelessWidget {
                 GetBuilder<OrderDetailsPageController>(
                     builder: (controller) => HandelOrderDetailsdataview(
                           statusRequest: controller.statusRequest,
-                          widget: Container(
+                          widget: SizedBox(
                             width: MediaQuery.of(context).size.width * 0.66,
                             child: theneworderdetails(
                               buttontitle: "قبول الطلب",
                               onpressed: () {
                                 controller.approve();
                               },
-                              map: Container(
+                              map: SizedBox(
                                 height: 360,
                                 width: 600,
                                 child: GoogleMap(
@@ -78,7 +78,7 @@ class NewOrderDetails extends StatelessWidget {
                               ),
                               listview: ListView.builder(
                                   shrinkWrap: true,
-                                  physics: NeverScrollableScrollPhysics(),
+                                  physics: const NeverScrollableScrollPhysics(),
                                   itemCount: controller.orderdetails.length,
                                   itemBuilder: (context, c) {
                                     return Padding(
@@ -328,7 +328,7 @@ Widget theneworderdetails({
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(address, style: ordercontent),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             map,

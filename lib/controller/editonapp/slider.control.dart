@@ -42,6 +42,7 @@ class SliderControllerImp extends SliderController {
     update();
   }
 
+  @override
   adddata(files) async {
     await sliderdata.adddata(files);
     getTheImages();

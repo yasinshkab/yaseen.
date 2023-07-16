@@ -4,7 +4,6 @@ import 'package:hommer_admin/controller/sections/main.control.dart';
 import 'package:hommer_admin/core/constant/text_theme.dart';
 import 'package:hommer_admin/core/handeldataview.dart';
 import 'package:hommer_admin/view/widget/overview_item.dart';
-import 'package:hommer_admin/view/widget/the_buttons.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class MainPage extends StatelessWidget {
@@ -157,7 +156,7 @@ class MainPage extends StatelessWidget {
                                   controller.operations.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 140,
                                         child: Text(
                                           "${controller.operations[index].userName}",
@@ -184,7 +183,7 @@ class MainPage extends StatelessWidget {
                                   controller.operations.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 100,
                                         child: Center(
                                           child: Text(
@@ -213,7 +212,7 @@ class MainPage extends StatelessWidget {
                                   controller.operations.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 125,
                                         child: Text(
                                           "${controller.operations[index].orderDate}",
@@ -242,7 +241,7 @@ class MainPage extends StatelessWidget {
                                           children: [
                                             "${controller.operations[index].orderStatus}" ==
                                                     "0"
-                                                ? Container(
+                                                ? SizedBox(
                                                     width: 100,
                                                     child: Center(
                                                       child: Text(
@@ -256,7 +255,7 @@ class MainPage extends StatelessWidget {
                                                   )
                                                 : "${controller.operations[index].orderStatus}" ==
                                                         "1"
-                                                    ? Container(
+                                                    ? SizedBox(
                                                         width: 100,
                                                         child: Center(
                                                           child: Text(
@@ -271,7 +270,7 @@ class MainPage extends StatelessWidget {
                                                       )
                                                     : "${controller.operations[index].orderStatus}" ==
                                                             "2"
-                                                        ? Container(
+                                                        ? SizedBox(
                                                             width: 100,
                                                             child: Center(
                                                               child: Text(
@@ -287,7 +286,7 @@ class MainPage extends StatelessWidget {
                                                           )
                                                         : "${controller.operations[index].orderStatus}" ==
                                                                 "3"
-                                                            ? Container(
+                                                            ? SizedBox(
                                                                 width: 100,
                                                                 child: Center(
                                                                   child: Text(
@@ -357,14 +356,14 @@ class MainPage extends StatelessWidget {
                           dataSource: controller.chartData,
                           xValueMapper: (SalesData sales, _) => sales.day,
                           yValueMapper: (SalesData sales, _) => sales.sales,
-                          color: Color.fromRGBO(209, 29, 34, 1),
+                          color: const Color.fromRGBO(209, 29, 34, 1),
                           width: 0.4,
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(12),
                             topRight: Radius.circular(12),
                           ),
                           spacing: 0.001,
-                          dataLabelSettings: DataLabelSettings(isVisible: true),
+                          dataLabelSettings: const DataLabelSettings(isVisible: true),
                         )
                       ],
                     ),

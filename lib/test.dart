@@ -15,7 +15,7 @@ class _LdidState extends State<Ldid> {
       body: Center(
           child: Column(
         children: [
-          Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: SfCartesianChart(
               primaryXAxis: CategoryAxis(),
@@ -24,7 +24,7 @@ class _LdidState extends State<Ldid> {
                     dataSource: getChartData(),
                     xValueMapper: (SalesData sales, _) => sales.day,
                     yValueMapper: (SalesData sales, _) => sales.sales,
-                    color: Color.fromRGBO(209, 29, 34, 1),
+                    color: const Color.fromRGBO(209, 29, 34, 1),
                     width: 0.4,
                     borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(12),

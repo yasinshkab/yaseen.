@@ -58,7 +58,7 @@ class ResetPassword extends StatelessWidget {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.end,
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           Icons.lock_outlined,
                                           color:
                                               Color.fromRGBO(125, 125, 125, 1),
@@ -95,7 +95,7 @@ class ResetPassword extends StatelessWidget {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.end,
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           Icons.lock_outlined,
                                           color:
                                               Color.fromRGBO(125, 125, 125, 1),

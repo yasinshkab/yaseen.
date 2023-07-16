@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:hommer_admin/controller/typecontroller.dart';
 import 'package:hommer_admin/core/constant/text_theme.dart';
 import 'package:hommer_admin/core/function/dialog.dart';
-import 'package:hommer_admin/core/function/handel_data.dart';
 import 'package:hommer_admin/core/handeldataview.dart';
 import 'package:hommer_admin/view/widget/message.dart';
 
@@ -28,7 +27,7 @@ class _TypesPageState extends State<TypesPage> {
                 statusRequest: controller.statusRequest,
                 widget: Center(
                     child: SingleChildScrollView(
-                        child: Container(
+                        child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.8,
                   child: Column(children: [
                     const SizedBox(
@@ -154,7 +153,7 @@ class _TypesPageState extends State<TypesPage> {
                     //   "${controller.catresponse}",
                     //   style: addLocation,
                     // ),
-                    Container(
+                    SizedBox(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: ListView.builder(
                           shrinkWrap: true,

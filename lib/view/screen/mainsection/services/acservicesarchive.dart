@@ -120,7 +120,7 @@ class ACServicesArchive extends StatelessWidget {
                                   controller.serviceorders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 50,
                                         child: Center(
                                           child: Text(
@@ -149,7 +149,7 @@ class ACServicesArchive extends StatelessWidget {
                                   controller.serviceorders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 120,
                                         child: Text(
                                           "${controller.serviceorders[index].serviceRegion}",
@@ -176,7 +176,7 @@ class ACServicesArchive extends StatelessWidget {
                                   controller.serviceorders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 125,
                                         child: Text(
                                           "${controller.serviceorders[index].serviceTime}",
@@ -205,7 +205,7 @@ class ACServicesArchive extends StatelessWidget {
                                           children: [
                                             "${controller.serviceorders[index].serviceStatus}" ==
                                                     "0"
-                                                ? Container(
+                                                ? SizedBox(
                                                     width: 100,
                                                     child: Center(
                                                       child: Text(
@@ -219,7 +219,7 @@ class ACServicesArchive extends StatelessWidget {
                                                   )
                                                 : "${controller.serviceorders[index].serviceStatus}" ==
                                                         "1"
-                                                    ? Container(
+                                                    ? SizedBox(
                                                         width: 100,
                                                         child: Center(
                                                           child: Text(
@@ -234,7 +234,7 @@ class ACServicesArchive extends StatelessWidget {
                                                       )
                                                     : "${controller.serviceorders[index].serviceStatus}" ==
                                                             "3"
-                                                        ? Container(
+                                                        ? SizedBox(
                                                             width: 100,
                                                             child: Center(
                                                               child: Text(
@@ -279,7 +279,7 @@ class ACServicesArchive extends StatelessWidget {
                                                       });
                                                 },
                                                 theText: "التفاصيل"),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 10,
                                             )
                                           ],

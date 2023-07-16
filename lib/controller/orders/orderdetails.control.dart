@@ -64,7 +64,7 @@ class OrderDetailsPageController extends GetxController {
     ordersModel = Get.arguments['ordersmodel'];
     markers.clear();
     markers.add(Marker(
-      markerId: MarkerId("1"),
+      markerId: const MarkerId("1"),
       position: LatLng(double.parse("${ordersModel.addressLat}"),
           double.parse("${ordersModel.addressLong}")),
     ));

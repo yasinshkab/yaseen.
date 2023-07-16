@@ -62,7 +62,7 @@ class OTPCODE extends StatelessWidget {
                                   height: 20,
                                 ),
                                 OtpTextField(
-                                    inputFormatters: [],
+                                    inputFormatters: const [],
                                     keyboardType: TextInputType.number,
                                     fieldWidth: 50,
                                     numberOfFields: 4,
@@ -97,7 +97,7 @@ class OTPCODE extends StatelessWidget {
                                               controller.resend();
                                             },
                                             theText: "إعادة الإرسال"),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 7,
                                         )
                                       ],

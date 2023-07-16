@@ -57,7 +57,7 @@ class OrdersModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['order_id'] = orderId;
     data['order_user'] = orderUser;
     data['order_address'] = orderAddress;

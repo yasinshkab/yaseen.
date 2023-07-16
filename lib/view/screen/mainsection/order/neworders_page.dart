@@ -120,7 +120,7 @@ class NewOrdersPage extends StatelessWidget {
                                   controller.orders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 80,
                                         child: Center(
                                           child: Text(
@@ -149,7 +149,7 @@ class NewOrdersPage extends StatelessWidget {
                                   controller.orders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 100,
                                         child: Text(
                                           "${controller.orders[index].addressRegion}",
@@ -176,7 +176,7 @@ class NewOrdersPage extends StatelessWidget {
                                   controller.orders.length,
                                   (index) => Column(
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 125,
                                         child: Text(
                                           "${controller.orders[index].orderDate}",
@@ -205,7 +205,7 @@ class NewOrdersPage extends StatelessWidget {
                                           children: [
                                             "${controller.orders[index].orderStatus}" ==
                                                     "0"
-                                                ? Container(
+                                                ? SizedBox(
                                                     width: 100,
                                                     child: Center(
                                                       child: Text(
@@ -219,7 +219,7 @@ class NewOrdersPage extends StatelessWidget {
                                                   )
                                                 : "${controller.orders[index].orderStatus}" ==
                                                         "2"
-                                                    ? Container(
+                                                    ? SizedBox(
                                                         width: 100,
                                                         child: Center(
                                                           child: Text(
@@ -234,7 +234,7 @@ class NewOrdersPage extends StatelessWidget {
                                                       )
                                                     : "${controller.orders[index].orderStatus}" ==
                                                             "3"
-                                                        ? Container(
+                                                        ? SizedBox(
                                                             width: 100,
                                                             child: Center(
                                                               child: Text(
@@ -259,7 +259,7 @@ class NewOrdersPage extends StatelessWidget {
                                         )),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
@@ -280,7 +280,7 @@ class NewOrdersPage extends StatelessWidget {
                                                 listdata:
                                                     controller.orders[index],
                                                 theText: "التفاصيل"),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 10,
                                             )
                                           ],

@@ -26,10 +26,10 @@ class _OrderDetailsState extends State<OrderDetails> {
         backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
         body: SafeArea(
             child: Center(
-          child: Container(
+          child: SizedBox(
             height: MediaQuery.of(context).size.height * 1,
             child: SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Column(children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 1,
@@ -37,7 +37,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.1,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width * 0.66,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -52,10 +52,10 @@ class _OrderDetailsState extends State<OrderDetails> {
                 GetBuilder<OrderDetailsPageController>(
                     builder: (controller) => HandelOrderDetailsdataview(
                           statusRequest: controller.statusRequest,
-                          widget: Container(
+                          widget: SizedBox(
                             width: MediaQuery.of(context).size.width * 0.66,
                             child: theorderdetails(
-                              map: Container(
+                              map: SizedBox(
                                 height: 360,
                                 width: 600,
                                 child: GoogleMap(
@@ -77,7 +77,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                               ),
                               listview: ListView.builder(
                                   shrinkWrap: true,
-                                  physics: NeverScrollableScrollPhysics(),
+                                  physics: const NeverScrollableScrollPhysics(),
                                   itemCount: controller.orderdetails.length,
                                   itemBuilder: (context, c) {
                                     return Padding(
@@ -324,7 +324,7 @@ Widget theorderdetails({
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(address, style: ordercontent),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             map,

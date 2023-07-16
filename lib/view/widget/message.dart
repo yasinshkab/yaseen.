@@ -52,7 +52,7 @@ Widget addDialog(
           // ignore: sized_box_for_whitespace
           Form(
         key: key,
-        child: Container(
+        child: SizedBox(
           height: isproduct == true ? 640 : 320,
           width: 480,
           child: Padding(
@@ -62,7 +62,7 @@ Widget addDialog(
                 children: [
                   Text(
                     isproduct == true ? "إضافة منتج" : "إضافة نوع",
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 24,
                       color: Color.fromRGBO(226, 33, 38, 1),
                     ),
@@ -83,7 +83,7 @@ Widget addDialog(
                     height: 16,
                   ),
                   thewidget,
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   Container(
@@ -146,16 +146,16 @@ Widget addDialog(
                       : const SizedBox(
                           height: 1,
                         ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   pickimageButton(onPressed: pickimage),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
                     children: [
-                      Spacer(),
+                      const Spacer(),
                       TextButton(
                         onPressed: buttonon,
                         child: const Text(
@@ -163,7 +163,7 @@ Widget addDialog(
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       TextButton(
                         onPressed: () {
                           Get.back();
@@ -173,10 +173,10 @@ Widget addDialog(
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                 ],

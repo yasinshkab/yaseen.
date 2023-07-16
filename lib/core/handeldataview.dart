@@ -187,7 +187,7 @@ class HandelOrdersdataview extends StatelessWidget {
     return statusRequest == StatusRequest.loading
         ? ListView.builder(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: 3,
             itemBuilder: (context, index) {
               return Shimmer.fromColors(
@@ -358,7 +358,7 @@ class HandelBottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return statusRequest == StatusRequest.loading
-        ? Container(
+        ? SizedBox(
             height: MediaQuery.of(context).size.height * 0.1,
             width: MediaQuery.of(context).size.width * 1,
           )
